@@ -10,10 +10,12 @@
             function trocarfrase(){
                 var fraseAtual = document.getElementById("frase");
                 fraseAtual.innerHTML = "Funcionou, a frase mudou!";
+                fraseAtual.style.color = "red";
+                fraseAtual.style.fontSize = "25px";
             }
         </script>
     </head>
     <body>
-        <h1 id="frase" onmouseout="trocarfrase()">Olá Mundo!</h1>
+        <h1 id="frase" onmouseover="trocarfrase()">Olá Mundo!</h1>
     </body>
 </html>

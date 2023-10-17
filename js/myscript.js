@@ -1,3 +1,5 @@
+alert("Olá galera!");
+
 function mudarFrase(){
     var elemento = document.getElementById("frase");
     elemento.innerHTML = "Qualquer frase";

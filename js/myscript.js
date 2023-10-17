@@ -9,3 +9,8 @@ function mudarFrase(){
     document.body.style.backgroundColor = "blue"
     elemento.innerHTML = "<img src=\'img/a.jpeg\' />"
 }
+
+function mudarClasse() {
+    var fraseAtual = document.getElementsById("frase");
+    fraseAtual.className = "h1_1";
+}

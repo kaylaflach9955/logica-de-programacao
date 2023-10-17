@@ -7,17 +7,18 @@
         <script>
             alert("Olá galera!");
 
-            function trocarfrase(){
-                var fraseAtual = document.getElementById("frase");
-                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
-                fraseAtual.style.color = "red";
-                fraseAtual.style.fontSize = "25px";
-                fraseAtual.style.backgroundColor = "yellow";
+            function mudarFrase(){
+                var elemento = document.getElementById("frase");
+                elemento.innerHTML = "Qualquer frase";
+                elemento.style.color = "red";
+                elemento.style.fontSize = "25px";
+                elemento.style.backgroundColor = "yellow";
                 document.body.style.backgroundColor = "blue"
+                elemento.innerHTML = "<img src=\'img/a.jpeg\' />"
             }
         </script>
     </head>
     <body>
-        <h1 id="frase" onmouseover="trocarfrase()">Olá Mundo!</h1>
+        <h1 ondblclick="mudarFrase()" id="frase">Olá Mundo!</h1>
     </body>
 </html>

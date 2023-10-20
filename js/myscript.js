@@ -15,7 +15,60 @@ function mudarClasse() {
     fraseAtual.className = "h1_1";
 }
 
-function trocarTexto(umTexto) {
+function trocarTexto() {
     var elemento = document.getElementById("frase");
-    elemento.innerHTML = umTexto;
+    var elementoNovo = documento.getElementById('novaFrase').value;
+    elemento.innerHTML = ElementoNovo;
+}
+
+function somar() {
+    let camp1 = document.getElementById("n1");
+    let n1 = parseInt(camp1.value);
+
+    let camp2 = document.getElementById("n2");
+    let n2 = parseInt(camp2.value);
+
+    let resultado = n1 + n2;
+
+    let campoResultado = document.getElementById("resultado");
+    campoResultado.value = resultado;
+}
+
+function subtrair() {
+    let camp1 = document.getElementById("n1");
+    let n1 = parseInt(camp1.value);
+
+    let camp2 = document.getElementById("n2");
+    let n2 = parseInt(camp2.value);
+
+    let resultado = n1 - n2;
+
+    let campoResultado = document.getElementById("resultado");
+    campoResultado.value = resultado;
+}
+
+function dividir() {
+    let camp1 = document.getElementById("n1");
+    let n1 = parseInt(camp1.value);
+
+    let camp2 = document.getElementById("n2");
+    let n2 = parseInt(camp2.value);
+
+    let resultado = n1 / n2;
+
+    let campoResultado = document.getElementById("resultado");
+    campoResultado.value = resultado;
+}
+
+function multiplicar() {
+    let camp1 = document.getElementById("n1");
+    let n1 = parseInt(camp1.value);
+
+    let camp2 = document.getElementById("n2");
+    let n2 = parseInt(camp2.value);
+
+    let resultado = n1 * n2;
+
+    let campoResultado = document.getElementById("resultado");
+    campoResultado.value = resultado;
 }

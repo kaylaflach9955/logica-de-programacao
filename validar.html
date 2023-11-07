@@ -2,27 +2,28 @@
     <head>
         <script>
             function validar() {
-                var nome = document.getElementById("nome").value
-                var sobrenome = document.getElementById("sobrenome").value
 
-                if (nome === "" || sobrenome === "") {
-                    alert("Não Validado")
+                var nome = document.getElementById("nome").value;
+                var sobrenome = document.getElementById("sobrenome").value;
+
+                if (nome === "") {
+                    alert("Não Validado");
                 } 
                 else {
-                    alert("Validado")
+                    alert("Validado");
                 }
-                
+
             }
         </script>
     </head>
     <body>
         <h1>Validar</h1>
-        <form>
             <fieldset>
-                <input type="text" name="nome" id="nome">
-                <input type="text" name="sobrenome" id="sobrenome">
-                <input type="submit" name="validar" id="validar" onclick="validar()">
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="nome"><br>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome"><br>
+                <input type="submit" value="validar"  onclick="validar()">
             </fieldset>
-        </form>
     </body>
 </html>

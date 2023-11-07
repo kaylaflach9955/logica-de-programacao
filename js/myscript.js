@@ -72,3 +72,7 @@ function multiplicar() {
     let campoResultado = document.getElementById("resultado");
     campoResultado.value = resultado;
 }
+
+function gebi(id){
+    return document.getElementById(id)
+}

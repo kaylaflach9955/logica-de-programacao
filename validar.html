@@ -4,14 +4,14 @@
         <script>
             function trabalhandoNome() {
                 /* explicando variáveis */
-                var nome = prompt("Diga um nome", "Wanderson")
-                var sobrenome = prompt("Diga um sobrenome", "Rigo")
+                var nome = prompt("Diga um nome", "Wanderson");
+                var sobrenome = prompt("Diga um sobrenome", "Rigo");
                 var nomeCompleto = nome + " " + sobrenome
                 var tamanhoDoNome = nomeCompleto.length
                 alert("[" + nomeCompleto + "]" +
-                    "\n" + " com tamanho = " + tamanhoDoNome)
+                    "\n" + " com tamanho = " + tamanhoDoNome);
 
-                var retorno = confirm("Seu nome é: " + nomeCompleto + "?")
+                var retorno = confirm("Seu nome é: " + nomeCompleto + "?");
                 if (retorno) {
                     console.log("beleza!")
                     document.write("confirmado o nome")
@@ -41,6 +41,9 @@
                     alert("senha deve ser maior que 3")
                     return
                 }
+
+                gebi("meuForm").submit()
+                alert("Sucesso")
 			}
 
 			function maiuscula(){
@@ -54,11 +57,11 @@
     <body>        
         <center>
             <h1>Validar</h1>
-			<form>
+			<form id="meuForm" action="http://jkorpela.fi/cgi-bin/echo.cgi">
 				<fieldset align="center" style="width:270px"> 
 					<legend>Login:</legend>
-					Email: <input id="idEmail" type="email" required onblur="maiuscula();"><br>
-					Senha: <input id="idSenha" type="password"><br> 
+					Email: <input id="idEmail" name="email" type="email" required onblur="maiuscula();"><br>
+					Senha: <input id="idSenha" name="senha" type="password"><br> 
 					<input type="button" value="Enviar" onclick="validar();"> 
 				</fieldset> 
 			</form> 

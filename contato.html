@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function validarEmail() {
+            var email = document.getElementById("idEmail").value
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                alert("Email inválido")
+                return
+            }
+        }
+
+</script>
 </head>
 <body>
 
@@ -20,7 +31,7 @@
 
     <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/UF7YAmmfN8" method="POST">
 
-        Email: <input placeholder="nada@nada.com" title="Um email válido" type="email" name="email" id="idEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+        Email: <input placeholder="nada@nada.com" title="Um email válido" type="email" name="email" id="idEmail" onblur="validarEmail()" required><br>
 
         Nome: <input name="nome" placeholder="Ex: karyne" type="text" id="idNome" pattern="([a-z]{5,12})"><br>
         <textarea name="corpo" id="" cols="30" rows="3" placeholder="O texto do seu e-mail" required></textarea><br>

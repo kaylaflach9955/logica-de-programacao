@@ -18,9 +18,11 @@
         WhatsApp
     </a>
 
-    <form id="idForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-        Email: <input placeholder="nada@nada.com" title="Um email válido" type="email" name="email" id="idEmail" required>
-        Nome: <input type="text" id="idNome">
+    <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/UF7YAmmfN8" method="POST">
+
+        Email: <input placeholder="nada@nada.com" title="Um email válido" type="email" name="email" id="idEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+
+        Nome: <input name="nome" placeholder="Ex: karyne" type="text" id="idNome" pattern="([a-z]{5,12})"><br>
         <textarea name="corpo" id="" cols="30" rows="3" placeholder="O texto do seu e-mail" required></textarea><br>
         <input type="submit" value="Enviar">
 

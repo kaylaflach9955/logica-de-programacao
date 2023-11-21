@@ -94,10 +94,53 @@
             document.write(element + "<br>")
            }
         }
+
+        function junina() {
+            var a = ["jose", "maria", "padre", "joana", "bento", "francisco"]
+
+            for (let i = 0; i < a.length; i++) {
+                const element = a[i];
+
+                if(element == "pastor"){
+                    document.write("casinha:" + i + " tem " + element + "<br>")
+                    break
+                }
+            }
+
+            var quem = prompt("Diga um nome")
+            var ondeEsta = a.indexOf(quem)
+            if(ondeEsta != -1) {
+                document.write("casinha:" + ondeEsta + " tem " + quem)
+                a.splice(ondeEsta,1) // remove 1
+            } else {
+                document.write("não achei " + quem + "<br>")
+            }
+
+            console.table(a)
+
+        }
+
+        function valor() {
+            n = prompt("Diga um número")
+            lista = []
+
+            for (let i = 0; i <= n; i++) {
+                lista.push(i)
+            }
+
+            document.write(lista + "<br>")
+
+            remover = prompt("Digite o número a ser removido:")
+            lista.splice(remover,1)
+
+            document.write(lista)
+        }
+
+        
     </script>
 
 </head>
 <body>
-    <input type="button" value="Enviar" onclick="arranjos()">
+    <input type="button" value="Enviar" onclick="valor()">
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function contar() {
+            var soma = 0
+            for (var i = 0; i < 1001; i++) {
+                document.write(i + "" + soma + "<br>")
+                soma = soma + i
+            }
+        }
+
+        function contarwhile() {
+            var n = 1;
+
+            while (n <= 10)
+            {
+                document.write(n);
+                document.write('<br>');
+                n = n + 1;
+            }
+        }
+
+        
+    </script>
+
+</head>
+<body>
+    <input type="button" value="Enviar" onclick="contarwhile()">
+</body>
+</html>

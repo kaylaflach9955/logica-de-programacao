@@ -141,12 +141,28 @@
             num1 = prompt("Diga a nota do 1° Trimestre")
             num2 = prompt("Diga a nota do 2° Trimestre")
             lista = []
+            var nota = ""
 
-            for (let i = 0; i <= num1; i++) {
-                lista.push(i)
+            lista.push(num1);
+            lista.push(num2);
+
+            
+            for (let i = 0; i <= 2; i++) {
+                var nota = parseInt(num1) + parseInt(num2)
             }
 
-            document.write(lista)
+            var media = 18.0 - nota;
+
+            if(media < 10) {
+                alert("Voce presica alcançar " + media);
+            } else {
+                alert("Não deu. Precisaria de " + m3 + ". Está reprovado!");
+            }
+
+            document.write(lista + "<br>")
+
+            document.write(nota)
+
 
         }
 

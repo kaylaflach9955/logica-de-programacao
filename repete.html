@@ -137,13 +137,24 @@
             document.write(lista)
         }
 
-        
+        function media() {
+            num1 = prompt("Diga a nota do 1° Trimestre")
+            num2 = prompt("Diga a nota do 2° Trimestre")
+            lista = []
+
+            for (let i = 0; i <= num1; i++) {
+                lista.push(i)
+            }
+
+            document.write(lista)
+
+        }
 
         
     </script>
 
 </head>
 <body>
-    <input type="button" value="Enviar" onclick="valor()">
+    <input type="button" value="Enviar" onclick="media()">
 </body>
 </html>
